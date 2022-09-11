@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * *  main - prints some message
- * *
- * *  Uses: Puts function to print the message
- * *  Return: 0
- * */
+ *   main - prints some message
+ * 
+ *   Uses: Puts to print the message
+ *   Return: 0
+ * /
 
 
 
