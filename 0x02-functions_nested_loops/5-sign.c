@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of the number  
+ * print_sign - prints the sign of the number
  * @n: an argument passed to print_sign function
  * Return: returns 1 if positive, -1 if negative, and 0 if zero
  */
