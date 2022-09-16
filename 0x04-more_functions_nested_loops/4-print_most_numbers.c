@@ -1,14 +1,18 @@
 #include "main.h"
 
 /**
- * print_numbers - prints digits from 0 to 9
+ *print_most_numbers - prints digits except 2 and 4
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
-	int numbers;
+	int numbers = 48;
 
-	for (numbers = 48; numbers < 58; numbers++)
-		putchar(numbers);
-	putchar('\n');
+	while (numbers < 58)
+	{
+		if (numbers != 50 && numbers != 52)
+			_putchar(numbers);
+		numbers++;
+	}
+	_putchar('\n');
 }
