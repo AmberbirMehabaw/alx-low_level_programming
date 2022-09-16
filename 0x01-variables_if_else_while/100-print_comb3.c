@@ -16,7 +16,7 @@ int main(void)
 			if (first != second)
 			{
 				if (first == 0 || second > first)
-				{	
+				{
 					putchar(first + '0');
 					putchar(second + '0');
 					if (!((first == 8) && (second == 9)))
