@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
-
 /**
  *main - prints two 2 number combinations
  *Return: returns 0 (success)
  */
-
 int main(void)
 {
 	int first, second, third, l;
@@ -27,7 +25,7 @@ int main(void)
 						putchar(l);
 						if (first + second + third + l == 227 && first == 57)
 						{
-						break;
+						ibreak;
 						}
 						else
 						{
