@@ -6,6 +6,8 @@
  */
 int main(void)
 {
+	int a = 1, b = 2, r = 0, p = 2;
+
 	while (r < 4000000)
 	{
 		r = a + b;
