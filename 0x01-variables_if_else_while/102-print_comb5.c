@@ -16,23 +16,23 @@ int main(void)
 			{
 				for (l = 48; l <= 57; l++)
 				{
-					if (((third + l) > (first + second) &&  third >= first) || first < third)
+				if (((third + l) > (first + second) &&  third >= first) || first < third)
+				{
+					putchar(first);
+					putchar(second);
+					putchar(' ');
+					putchar(third);
+					putchar(l);
+					if (first + second + third + l == 227 && first == 57)
 					{
-						putchar(first);
-						putchar(second);
-						putchar(' ');
-						putchar(third);
-						putchar(l);
-						if (first + second + third + l == 227 && first == 57)
-						{
-							break;
-						}
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					break;
 					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+				}
 				}
 			}
 		}
