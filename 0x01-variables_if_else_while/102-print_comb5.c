@@ -25,12 +25,12 @@ int main(void)
 						putchar(l);
 						if (first + second + third + l == 227 && first == 57)
 						{
-						break;
+							break;
 						}
 						else
 						{
-						putchar(',');
-						putchar(' ');
+							putchar(',');
+							putchar(' ');
 						}
 					}
 				}
