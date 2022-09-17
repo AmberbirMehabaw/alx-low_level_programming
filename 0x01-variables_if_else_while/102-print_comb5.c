@@ -25,7 +25,7 @@ int main(void)
 						putchar(l);
 						if (first + second + third + l == 227 && first == 57)
 						{
-						ibreak;
+						break;
 						}
 						else
 						{
