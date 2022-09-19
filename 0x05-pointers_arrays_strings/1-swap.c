@@ -2,14 +2,15 @@
 
 /**
  * swap_int - swaps two integers
- * @a & @b : pointers passed as an argument to swap_int
+ * @a: first parameter
+ * @b: second parameter
  */
 
 void swap_int(int *a, int *b)
 {
 	int *c;
 
-	c = a;
-	a = b;
-	b = c;
+	*c = *a;
+	*a = *b;
+	*b = *c;
 }
