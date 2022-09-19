@@ -14,12 +14,12 @@ void print_rev(char *s)
 		length++;
 		s++;
 	}
-`	
+
 	index = length - 1;
 	
 	while (index >= 0)
 	{
-		_putchar(*(s + index))
+		_putchar(*(s + index));
 		index--;
 	}
 	_putchar('\n');
