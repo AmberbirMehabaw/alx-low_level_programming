@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * rot13 - encrypts the string to its rot13 version
