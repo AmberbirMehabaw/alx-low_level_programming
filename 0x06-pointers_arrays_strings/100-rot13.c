@@ -2,7 +2,9 @@
 
 /**
  * rot13 - encrypts the string to its rot13 version
- * @s: a string argument to be encrypted
+ * @s: a string argument to be encrypted\
+ * @i: loop variable
+ * @j: loop variable
  * Return: returns a pointer to encrypted message
  */
 
@@ -21,6 +23,5 @@ char *rot13(char *s)
 			}
 		}
 	}
-
 	return (s);
 }
