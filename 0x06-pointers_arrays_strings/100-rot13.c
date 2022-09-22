@@ -1,10 +1,8 @@
-#include "main.h"
+#include "main"
 
 /**
  * rot13 - encrypts the string to its rot13 version
- * @s: a string argument to be encrypted\
- * @i: loop variable
- * @j: loop variable
+ * @s: a string argument to be encrypted
  * Return: returns a pointer to encrypted message
  */
 
