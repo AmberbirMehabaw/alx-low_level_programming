@@ -14,7 +14,7 @@ char *rot13(char *s)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (s[i] >= 'a' && s[i] <= 'z' || s[i] >= 'A' && s[i] <= 'Z')
+			if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
 			{
 				s[i] += 13;
 				break;
