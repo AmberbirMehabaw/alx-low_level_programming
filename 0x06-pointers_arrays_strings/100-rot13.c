@@ -9,14 +9,16 @@
 char *rot13(char *s)
 {
 	int i = 0, j;
+	char *alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *map_rot = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+			if (s[i] == alpha[j])
 			{
-				s[i] = s[i] + 13;
+				s[i] = map_rot[j];
 				break;
 			}
 		}
