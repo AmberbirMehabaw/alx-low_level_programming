@@ -7,7 +7,7 @@ int test(int n, int check);
  * @n: number to be checked
  * Return: return 1 if n is prime or -1 if not
  */
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
 	int check = 2;
 
