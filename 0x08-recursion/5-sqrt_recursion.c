@@ -1,5 +1,7 @@
 #include "main.h"
 
+int find(int n, int r);
+
 /**
  * _sqrt_recursion - computes the natural square root of a number
  * @n: The number to be computed
