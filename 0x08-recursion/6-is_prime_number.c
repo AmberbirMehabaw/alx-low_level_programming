@@ -17,6 +17,7 @@ int is_prime_number(int n)
 }
 /**
  * test - tests whether the number is divisible or not.
+ * @n: The number to be tested
  * @check: The divisor
  * Return: returns 0 if the number is divisible,
  * otherwise it returns 1
