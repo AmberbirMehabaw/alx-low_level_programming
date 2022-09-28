@@ -15,13 +15,21 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 1)
 		return (1);
-	if (n>1)
-	{
-		if (r * r == n)
-			return (r);
-		if (r == n / 2)
-			return (-1);
-		r++;
-		return _sqrt_recursion(n);
-	}
+
+	return (find(n, r));
+}
+
+/**
+ * find - finds the natural square root of n
+ * @n: A number whose root is going to be computed
+ * @r: The root to be tested
+ * Return: returns root if its square equals to num, otherwise -1.
+ */
+int find(int n, int r)
+{
+	if (r * r == n)
+		return (r);
+	if (r == n / 2)
+		return (-1);
+	return (find(n, r + 1));
 }
