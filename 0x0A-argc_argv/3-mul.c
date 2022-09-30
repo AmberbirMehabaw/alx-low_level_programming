@@ -4,6 +4,7 @@
 /**
  *  main - multiplies two numbers
  *  @argc: number of command line arguments
+ *  @argv: The name of the array that holds the command line arguments
  *  Return: returns o or 1
  */
 
