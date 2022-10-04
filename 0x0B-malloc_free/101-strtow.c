@@ -41,3 +41,50 @@ int count_words(char *str)
 
 	return (word_count);
 }
+
+/**
+ * strtow - Splits a string into words.
+ * @str: The string to be splitted.
+ * Return: Returns
+ */
+
+char **strtow(char *str)
+{
+	int i = 0, w_index = 0, l_index, word_len, no_of_words;
+	char **word_from_str;
+
+	if (str == NULL || *str == '\0')
+		return (NULL);
+
+	no_of_words = count_words(str);
+	if (no_of_words == 0)
+		return (NULL);
+
+	word_from_str = malloc(sizeof(char *) * (no_of_words + 1));
+	if (word_from_str == NULL)
+		return (NULL);
+
+	for (; w_index < no_of_words; w_index++)
+	{
+		while (str[i] == ' ')
+			i++;
+		word_len = count_word_len(str + i);
+		word_from_str[w_index] = malloc(sizeof(char) * (word_len + 1));
+
+		if (word_from_str[w_index] == NULL)
+		{
+			for (; w_index >= 0; w_index--)
+				free(word_from_str[w_index]);
+
+			free(word_from_str);
+			return (NULL);
+		}
+		for (l_index = 0; l_index < word_len; l_index++)
+			word_from_str[w_index][l_index] = str[i++];
+
+		word_from_str[w_index][l_index] = '\0';
+	}
+	word_from_str[w_index] = NULL;
+
+	return (word_from_str);
+}
