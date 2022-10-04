@@ -13,6 +13,7 @@ int count_word_len(char *s)
 
 	for (; s[i] && s[i] != ' '; i++)
 		len++;
+
 	return (len);
 }
 
@@ -28,6 +29,7 @@ int count_words(char *str)
 
 	for (; str[i]; i++)
 		total_len += 1;
+
 	for (i = 0; i < total_len; i++)
 	{
 		if (str[i] != ' ')
