@@ -30,6 +30,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *str_concat;
 	int s2_index = 0, s1_size, s2_size, size, index;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
