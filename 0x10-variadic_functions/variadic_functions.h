@@ -4,11 +4,7 @@
 /*
  * File: variadic_functions.h
  * Desc: This header file contains all prototypes, headers, and
- * structure definations required for the 0x10-variadic_functions project.
- *
- * Author: Gizachew Bayness (eleccrazy)
- *
- * Date Created: May 12, 2022
+ * structure definations required for the 0x10-variadic_functions project
  *
  */
 #include <stdarg.h>
